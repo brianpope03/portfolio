@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+  }
+  
+  .left-container {
+    background-color: rgb(202, 202, 228);
+    color: white;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .top-right-container {
+    background-color: white;
+    color: black;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .bottom-right-container {
+    background-color: white;
+    color: black;
+    width: 50%;
+    padding: 20px;
+  }
+  .text-box {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: max-content;
+  }
+  .left-container {
+    position: relative; /* Ensure that the position of the overlay is relative to the container */
+  }
+  
+  .left-container::before {
+    content: ""; /* Create a pseudo-element to serve as the overlay */
+    position: absolute; /* Position the overlay relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+  }
+  
+  
+  
+  /* Adjust the text color to white */
+  .left-container h1,
+  .left-container h2,
+  .left-container p {
+    color: black;
+  }
+  
+  
+  
+  
+  .linkedin-logo {
+    width: 50px; /* Adjust size of the LinkedIn logo */
+  }
+  .profile-pic {
+    width: 220px; /* Adjust the width to your desired size */
+    max-height:max-content;;
+    
+  }
+  
+  .left-container {
+    width: 180%; /* Adjust the width to your desired size */
+  }
+  .right-container {
+    width: 220%; /* Adjust the width to your desired size */
+  }
+  h1{color: black;}
+  .contact-me{color: black;
+font: size 40px; ;}
+.left-container {
+    background-image: url("backgroundi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0 to 1) for transparency */
+    /* Other styles for the left container */
+  }
+  
+  
+  
